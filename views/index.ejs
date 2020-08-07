@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+        <th>Name</th>
+        <th>Image</th>
+        <th>Summary</th></tr>
+    
+    <% if(results.length > 0){ %>
+        <% results.forEach(val =>{  %>
+    <tr>
+    <td><%- val.name %></td>
+    <td><img src =<%- val.img %> ></td>
+    <td><%- val.summary %></td>
+
+    </tr>
+    <% });%>
+    <% } %>
+
+</table>
+</body>
+</html>
